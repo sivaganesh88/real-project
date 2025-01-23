@@ -1,4 +1,4 @@
-import { AiOutlineContacts, AiOutlineHeart, AiOutlineSearch, AiOutlineShoppingCart } from 'react-icons/ai';
+
 import './App.css';
 import data from './data';
 import Card from "./Card"
