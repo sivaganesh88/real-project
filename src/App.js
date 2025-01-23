@@ -13,8 +13,6 @@ function App() {
     const priceMatch = filter.price ? ele.newPrice >= filter.price.split('-')[0] && ele.newPrice <= filter.price.split('-')[1] : true;
     const colorMatch = filter.color ? ele.color.toLowerCase() === filter.color.toLowerCase() : true;
     const searchMatch = ele.company.toLowerCase().includes(search.toLowerCase());
-    console.log(priceMatch);
-    console.log(filter.category)
     return categoryMatch && priceMatch && colorMatch && searchMatch;
   }).map(prv => (
     <Card title={prv.title} img={prv.img} alt={prv.title} star={prv.star} company={prv.company} newPrice={prv.newPrice} prevPrice={prv.prevPrice} reviews={prv.reviews} />
